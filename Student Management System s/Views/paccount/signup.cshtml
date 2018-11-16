@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "SignUp";
+    Layout = "~/Views/Shared/_LayoutPs.cshtml"; 
+}
+
+
+<h2>SignUp Here!</h2><br>
+
+<form>
+    <h3>Already have a account!@Html.ActionLink("Login", "login", "paccount")</h3>
+    <div class="form-group">
+        <label for="reg#">Enter Child's Registration Number </label>
+        <input id="reg#" type="text" class="form-control" placeholder="XXXX-XX-XXX">
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="text" class="form-control" placeholder="Email Type Here">
+    </div>
+    <div class="form-group">
+        <label for="ParentsName">Parents Name </label>
+        <input type="text" class="form-control" placeholder="Parents Name Type Here" id="ParentsName">
+    </div>
+    <div class="form-group">
+        <label for="dob">Date Of Birth </label>
+        <input id="dob" type="text" class="form-control" placeholder="Date Of Birth">
+    </div>
+    <div class="form-group">
+        <label for="cnt">Personal Contact Number</label>
+        <input type="text" class="form-control" placeholder="XXXX-XXXXXXX" id="cnt">
+    </div>
+</form>
+
+
+<div>
+    <h4>@Html.ActionLink("back to Main Page", "index", "Home")</h4>
+    
+</div>
+

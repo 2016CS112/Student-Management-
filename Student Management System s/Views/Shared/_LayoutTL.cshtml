@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - SMS</title>
+
+    @*Here Sildebar *@
+    <style>
+.body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+    </style>
+
+
+
+
+
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Student Management System", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "taccount")</li>
+                    
+
+@*
+                    <li>@Html.ActionLink("Add Event", "AddEvent", "Event")</li>
+
+                    <li>@Html.ActionLink("Events", "index", "Event")</li>
+                    <li>@Html.ActionLink("AttandenceRecord", "index", "TAttancedence")</li>
+                    <li>@Html.ActionLink("StudentAttandece", "StudentAttandence", "TAttancedence")</li>>
+                    <li>@Html.ActionLink("StudentFeedbacks", "index", "TFeed")</li>
+                    <li>@Html.ActionLink("ParentsContact", "index", "ParentsContact")</li>
+                    <li>@Html.ActionLink("GiveFeedback", "Givefeedback", "TFeed")</li>
+                    <li>@Html.ActionLink("Upload Grade", "UploadGrade", "UDMC")*@
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <ul>
+        <li>@Html.ActionLink("Add Event", "AddEvent", "Event")</li>
+        <li>@Html.ActionLink("Events", "index", "Event")</li>
+        <li>@Html.ActionLink("AttandenceRecord", "index", "TAttancedence")</li>
+        <li>@Html.ActionLink("StudentAttandece", "StudentAttandence", "TAttancedence")</li>
+        <li>@Html.ActionLink("StudentFeedbacks", "index", "TFeed")</li>
+        <li>@Html.ActionLink("ParentsContact", "index", "ParentsContact")</li>
+        <li>@Html.ActionLink("GiveFeedback", "Givefeedback", "TFeed")</li>
+        <li>@Html.ActionLink("Upload Grade", "UploadGrade", "UDMC")
+            </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year -Student Management System</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+
+</html>

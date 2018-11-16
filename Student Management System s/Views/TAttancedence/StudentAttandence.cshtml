@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Upload StudentAttandence";
+    Layout = "~/Views/Shared/_LayoutTL.cshtml";
+}
+
+
+<div class="content">
+    <h2>Upload StudentAttandence</h2>
+<table class="table table-bordered table-responsive table-hover">
+    <tr>
+        <th>Registration Number
+            </th>
+        <th>
+            Status
+            </th>
+        </tr>
+    <tr>
+        <td>
+            2020-CS-232
+            </td>
+        <td>
+            <input type="radio"  name ="attandence" value="Present" >Present<br>
+            <input type="radio"   name = "attandence" value="Absent">Absent
+            </td>
+        </tr>
+    <tr>
+        <td>
+            2020-CS-213
+            </td>
+        <td>
+            <input type="radio" value="X" name="attandence1">Present<br>
+            <input type="radio" value="Absent"  name="attandence1">Absent</td>
+        </tr>
+    </table>
+    
+
+<div>
+    <button type="submit" class="btn btn-primary">Upload Attandence</button>
+    </div>
+
+</div>

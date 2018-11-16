@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "signup";
+    Layout = "~/Views/Shared/_LayoutT1.cshtml";
+}
+
+<h2>Sir SignUp Here</h2>
+
+<form>
+    <div>
+        <label for="name">Password</label>
+        <input class="form-control" type="text" id="name" placeholder="Type Here!">
+    </div>
+    <div class="form-group">
+        <label for="eamil">Email</label>
+        <input type="text" class="form-control" id="email" placeholder="Type Here!" >
+        </div>
+    <div>
+        <label for="password">Password</label>
+        <input class="form-control" type="text" id="password"  placeholder="Type Here!">
+        </div>
+    <div>
+        <label for="repassword">ReType-Password</label>
+        <input class="form-control" type="text" id="repassword" placeholder="ReType Password Here!">
+    </div>
+
+    <div>
+        <label for="dob">Date Of Birth</label>
+        <input type="text" placeholder="Type Here!" class="form-control" id="dob">
+        </div>
+    <div>
+        <button class="btn ">
+        @Html.ActionLink("SginUP","index" ,"taccount")   
+        </button>
+        </div>
+    </form>
+
+

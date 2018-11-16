@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "loginParents-SMS";
+    Layout = "~/Views/Shared/_LayoutPL.cshtml"; 
+}
+
+
+<h2>Welcome To  <b>SMS</b> Student Management System</h2><br>
+<h3><b>Login</b> Here to view your Child Account account data.</h3>
+
+<h4>Don't have a Account! @Html.ActionLink("Sign Up", "signup", "paccount")</h4>
+
+<form>
+    <div class="form-group">
+        <lable for="email">Enter Email</lable>
+        <input id="email" class="form-control" placeholder="Type Here!" type="text">
+    </div>
+    <div class="form-group">
+        <lable for="reg#">Enter Registration Number of Your Child</lable>
+        <input id="reg#" class="form-control" placeholder="XXXX-XX-XXX" type="text">
+    </div>
+    <div class="form-group">
+        <lable for="pass">Enter Password</lable>
+        <input id="pass" class="form-control" placeholder="Password Type Here!" type="text">
+    </div>
+</form>
+
+<div>
+    <h4>@Html.ActionLink("back to Main Page", "index", "Home")</h4>
+</div>
+

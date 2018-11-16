@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Teacher Login";
+    Layout = "~/Views/Shared/_LayoutT.cshtml";
+}
+
+<h2>Here Please Sir Login First To View your Account!</h2>
+
+<div>
+    <h4>Don't Have Account</h4>@Html.ActionLink("SignUp", "signup", "taccount")
+    <form >
+        <div class="form-group">
+        <label for ="email">Sir Please Type Your Eamil</label>
+        <input type="text" placeholder="Type Here!" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+            <label for="pass">Sir Please Type your Password</label>
+            <input type="text" placeholder="Type Here!" class="form-control" id="pass">
+            </div>
+        
+        </form>
+    </div>
+<button class="btn btn-primary">@Html.ActionLink("Login" , "index" , "taccount" ) </button>
+
+<div>
+    <h5>@Html.ActionLink("Go Back TO Mainindex Page", "index", "Home")</h5>
+    </div>
