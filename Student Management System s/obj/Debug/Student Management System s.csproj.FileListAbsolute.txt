@@ -161,3 +161,4 @@ E:\Edu\2018-sem-5th\SE(lab)\LabAssigment\Student Management System\Student Manag
 E:\Edu\2018-sem-5th\SE(lab)\LabAssigment\Student Management System\Student Management System s\Student Management System s\obj\Debug\Student Management System s.dll
 E:\Edu\2018-sem-5th\SE(lab)\LabAssigment\Student Management System\Student Management System s\Student Management System s\obj\Debug\Student Management System s.pdb
 E:\Edu\2018-sem-5th\SE(lab)\LabAssigment\Student Management System\Student Management System s\Student Management System s\obj\Debug\Student Management System s.csprojResolveAssemblyReference.cache
+E:\Edu\2018-sem-5th\SE(lab)\Student Management System\Student Management System s\Student Management System s\obj\Debug\Student Management System s.csprojResolveAssemblyReference.cache
